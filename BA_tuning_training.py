@@ -103,14 +103,14 @@ params_z.update(study_z.best_params)
 
 
 # Save/Load parameters
-with open('params_z_expanded_features.p', 'wb') as fp:
+with open('params_z_expanded_features.pkl', 'wb') as fp:
     pickle.dump(params_z, fp, protocol=pickle.HIGHEST_PROTOCOL)
-with open('params_x_expanded_features.p', 'wb') as fp:
+with open('params_x_expanded_features.pkl', 'wb') as fp:
     pickle.dump(params_x, fp, protocol=pickle.HIGHEST_PROTOCOL)
 
-with open('params_x_expanded_features.p', 'rb') as f:
+with open('params_x_expanded_features.pkl', 'rb') as f:
     params_x = pickle.load(f)
-with open('params_z_expanded_features.p', 'rb') as g:
+with open('params_z_expanded_features.pkl', 'rb') as g:
     params_z = pickle.load(g)
 
 
